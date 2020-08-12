@@ -8,33 +8,48 @@
   <link type="text/css" rel="stylesheet" href="css/ion.rangeSlider.css"  media="screen,projection"/>
   <link type="text/css" rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css"  media="screen,projection"/>
   <link type="text/css" rel="stylesheet" href="css/index.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="css/bootstrap.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Formulario</title>
 </head>
 
 <body>
-  <video src="img/video.mp4" id="vidFondo"></video>
+  <!--<video src="img/video.mp4" id="vidFondo"></video>-->
 
   <div class="contenedor">
     <div class="card rowTitulo">
       <h1>Buscador</h1>
     </div>
     <div class="colFiltros">
-      <form action="buscador.php" method="post" id="formulario">
+      <!--<form action="buscador.php" method="post" id="formulario">-->
+      <form id="formulario">
         <div class="filtrosContenido">
           <div class="tituloFiltros">
             <h5>Realiza una búsqueda personalizada</h5>
           </div>
-          <div class="filtroCiudad input-field">
-            <label for="selectCiudad">Ciudad:</label>
-            <select name="ciudad" id="selectCiudad">
-              <option value="" selected>Elige una ciudad</option>
-            </select>
-          </div>
+            <label for="selectCiudad">Ciudad: Cambio</label>
+
+            <div class="row margenTop">
+
+             <div class="filtroCiudad input-field col-sm-12 pt1">
+               <select class="form-control tp" id="idCiudad" name="">
+                 
+                 <option value="New York">New York</option>
+                 <option value="Los Angeles">Los Angeles</option>
+                 <option value="Miami">Miami</option>
+                 <option value="Houston">Houston</option>
+                 <option value="Orlando">Orlando</option>
+                 <option value="Washington">Washington</option>
+
+               </select>
+             </div>
+
+        </div>
           <div class="filtroTipo input-field">
             <label for="selecTipo">Tipo:</label><br>
             <select name="tipo" id="selectTipo">
               <option value="" selected>Elige un tipo</option>
+              <option value="Casa">Casa</option>
             </select>
           </div>
           <div class="filtroPrecio">
@@ -49,12 +64,13 @@
     </div>
 
     <div class="colContenido">
-      <div class="tituloContenido card">
-        <h5>Resultados de la búsqueda:</h5>
-        <div class="divider"></div>
-        <button type="button" name="todos" class="btn-flat waves-effect" id="mostrarTodos">Mostrar Todos</button>
-      </div>
-
+      <form action="buscadorTodos.php" method="post" id="todos">
+        <div class="tituloContenido card" name="imprimetodo">
+          <h5>Resultados de la búsqueda:</h5>
+          <div class="divider" id="imprimeResultado"></div>
+          <button type="submit" name="todos" class="btn-flat waves-effect" id="mostrarTodos">Mostrar Todos</button>
+        </div>
+      </form
     </div>
   </div>
 
@@ -62,5 +78,6 @@
   <script type="text/javascript" src="js/ion.rangeSlider.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/indexSelecciona.js"></script>
 </body>
 </html>
