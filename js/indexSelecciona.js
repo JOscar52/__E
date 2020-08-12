@@ -2,19 +2,22 @@
   Creación de una función para datos de selección de Ciudad y Tipo
 */
 
-alert("estoy en indexSelecciona.js");
+//alert("XRA estoy en indexSelecciona.js");
 //$("#idCiudad").change(function(event){
 $("#formulario").submit(function(event){  // detecta botón
-  alert("estoy en submit");
+  //alert("estoy en submit");
 var selCd=document.getElementById("idCiudad").value;
+var selTp=document.getElementById("idTipo").value;
 var rPrecio=document.getElementById("rangoPrecio").value;
 //var PrecioInicial=rtrim(rPrecio,";");
 //busca = patron.exec("3c491a-9d1d6-91br");
 var pospc=rPrecio.indexOf(";");
 var PrecioInicial=rPrecio.slice(0,pospc);
-//var PrecioInicial=rPrecio.indexOf(";");
-  alert("Ciudad seleccionada: "+selCd);
-  alert("Precio : "+rPrecio+" inicial "+PrecioInicial);
+var PrecioFinal=rPrecio.slice(pospc+1);
+//  alert("Ciudad seleccionada: "+selCd+" tipo: "+selTp);
+//  alert("Precio : "+rPrecio+" inicial "+PrecioInicial+" Final "+PrecioFinal);
+
+
 //});
 
 //$('#submitButton').submit(function(event){  // detecta botón
@@ -35,7 +38,11 @@ var PrecioInicial=rPrecio.slice(0,pospc);
     // dataType:"json",
      type: 'POST',
      data: {cd: selCd,
-            rPrec:rPrecio}
+            tp: selTp,
+            rPrecI: PrecioInicial,
+            rPrecF: PrecioFinal
+           }
+            //rPrecI:rPrecioInicial}
 
    }
   ).done(function(data){
