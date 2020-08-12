@@ -27,35 +27,50 @@
           <div class="tituloFiltros">
             <h5>Realiza una búsqueda personalizada</h5>
           </div>
-            <label for="selectCiudad">Ciudad: Cambio</label>
 
+            <!--<label for="selectCiudad">Ciudad:</label><br>-->
+            <div class="filtroCiudad input-field">
             <div class="row margenTop">
+             <div class="filtroCiudad input-field col-sm-offset-2 col-sm-8 pt1">
+               <label for="selectCiudad">Ciudad:</label><br>
+               <select class="form-control tp" id="idCiudad" name="nCiudad">
 
-             <div class="filtroCiudad input-field col-sm-12 pt1">
-               <select class="form-control tp" id="idCiudad" name="">
-                 
                  <option value="New York">New York</option>
                  <option value="Los Angeles">Los Angeles</option>
                  <option value="Miami">Miami</option>
                  <option value="Houston">Houston</option>
                  <option value="Orlando">Orlando</option>
                  <option value="Washington">Washington</option>
+                 <option value="Todo">Todo</option>
 
                </select>
              </div>
-
-        </div>
-          <div class="filtroTipo input-field">
-            <label for="selecTipo">Tipo:</label><br>
-            <select name="tipo" id="selectTipo">
-              <option value="" selected>Elige un tipo</option>
-              <option value="Casa">Casa</option>
-            </select>
+            </div>
           </div>
+            <!------------------------------------------>
+
+          <div class="filtroTipo input-field">
+            <div class="row margenTop">
+             <div class="filtroTipo input-field col-sm-offset-2 col-sm-8 pt1">
+               <label for="selectTipo">Tipo:</label><br>
+
+               <select class="form-control tp" id="idTipo" name="nTipo">
+                 <option value="Casa">Casa</option>
+                 <option value="Casa de Campo">Casa de Campo</option>
+                 <option value="Departamento">Departamento</option>
+                 <option value="Todo">Todo</option>
+
+               </select>
+
+             </div>
+            </div>
+         </div>
+
           <div class="filtroPrecio">
             <label for="rangoPrecio">Precio:</label>
             <input type="text" id="rangoPrecio" name="precio" value="" />
           </div>
+
           <div class="botonField">
             <input type="submit" class="btn white" value="Buscar" id="submitButton">
           </div>
