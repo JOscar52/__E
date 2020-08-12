@@ -1,8 +1,6 @@
 /*
   Creación de una función personalizada para jQuery que detecta cuando se detiene el scroll en la página
 */
-
-alert("estoy en index.js");
 $.fn.scrollEnd = function(callback, timeout) {
   $(this).scroll(function(){
     var $this = $(this);
@@ -52,32 +50,3 @@ function playVideoOnScroll(){
 
 inicializarSlider();
 playVideoOnScroll();
-
-//*********************************
-$('#submitButton').submit(function(event){  // detecta botón
-  alert("js")
-}
-/*
-$('#submitButton').submit(function(event){  // detecta bot�n
-  alert("Mostrar TODOS");
-   var subvarjs3 = "mostrarTodos";
-   //var subvarjs4 = $('form').find('input[name="hinputname4"]').val();
-   //alert(" en js "+subvarjs3);alert(subvarjs4);
-   event.preventDefault();
-   $.ajax(
-   {
-     url: './Mostrar.php',
-// agrego 2 l�neas
-//    cache: false,
-//    contentType: false,
-//    processData: false,
-// agregu� 2 l�neas
-    // dataType:"json",
-     type: 'POST',
-     data: {ajaxvarjs3: subvarjs3}
-
-   }
-  ).done(function(data){
-      alert("FIN");
-  }
-*/
