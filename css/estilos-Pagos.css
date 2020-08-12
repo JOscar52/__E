@@ -1,0 +1,106 @@
+/* estilos-Pagos.css */
+#logo{ width: 30%;}
+
+.gris{
+  background: #F9FCFC;
+  background-color: green;
+  box-shadow: 0 4px 5px #BVB0AD;
+}
+
+/* Clase que determina la imagen de fondo */
+.fig-fondo{
+  /*background-image: url("../img/background.jpg");*/
+  background-image: url("../img/Wobi.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.fondoInicial{/*
+  background: rgba(249,252,252,0.8);
+  box-shadow: 4px 4px 5px #BCB0AD;
+  box-shadow: 4px 4px 5px lightblue;*/
+}
+
+.contenedor{
+  /*/padding: 2em;*/
+  padding-left: 3em;
+  padding-right: 3em;
+  height: 300px;
+  /*margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(211, 225, 239, 0.7);
+  border-radius: 15px;
+  height: 760px;*/
+}
+/* Clase que define el estilo del elemento informativo del formulario */
+.info, .tpago {
+  background: #fff176;
+  opacity: 0.9;
+  display: none;
+  float: right;
+}
+/* Clase que define el estilo del elemento de error del formulario */
+.error{
+  color: #b71c1c;
+  float: right;
+  display: none;
+}
+
+.pt1{
+  background-color: teal;
+  /* max-height: 100px;*/
+  height: 200px;
+}
+
+.par{
+  max-height: 400px;
+  overflow: auto;
+}
+.pt2{
+  padding-top: 15px;
+  text-align: left;
+  background-color: aliceblue;
+  background-color: lightblue;
+  min-height: 50px;
+  /*max-height: 300px;*/
+  /*overflow: auto;*/
+}
+.pt3, .pt4{
+  padding-top: 15px;
+  text-align: left;
+  text-indent: inherit;
+  background-color: aliceblue;
+  background-color: lightgreen;
+  min-height: 50px;
+  /*max-height: 300px;*/
+  /*overflow: auto;*/
+}
+.pt4, .pt3, .pt2{
+  color: darkblue;
+  color: teal;
+  text-shadow: black;
+  text-shadow: 1px 1px 1px black;
+  background-color: #e63900;
+  background-color: #cc4400;
+  background-color: #ff9966;
+}
+
+/*li:nth-child(odd){
+  background-color: teal;
+}
+li:nth-child(even){
+  background-color: blue;
+}
+*/
+li{
+  background-color: aliceblue;
+  background-color: #bbdefb;
+}
+
+/*.pt4:nth-child(odd){
+  background-color: brown;
+}*/
