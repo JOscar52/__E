@@ -68,7 +68,7 @@
 		"Ciudad": "Washington",
 		"Telefono": "390-713-8687",
 		"Codigo_Postal": "70689",
-		"Tipo": "Apartamento",
+		"Tipo": "Departamento",
 		"Precio": "$60,951"
 	},
 	{
@@ -113,7 +113,7 @@
 		"Ciudad": "New York",
 		"Telefono": "252-330-0116",
 		"Codigo_Postal": "5422",
-		"Tipo": "Apartamento",
+		"Tipo": "Departamento",
 		"Precio": "$78,947"
 	},
 	{
@@ -140,7 +140,7 @@
 		"Ciudad": "Los Angeles",
 		"Telefono": "436-742-7954",
 		"Codigo_Postal": "31519",
-		"Tipo": "Apartamento",
+		"Tipo": "Departamento",
 		"Precio": "$52,433"
 	},
 	{
@@ -149,7 +149,7 @@
 		"Ciudad": "Houston",
 		"Telefono": "383-252-8216",
 		"Codigo_Postal": "83594",
-		"Tipo": "Apartamento",
+		"Tipo": "Departamento",
 		"Precio": "$85,641"
 	},
 	{
@@ -176,7 +176,7 @@
 		"Ciudad": "Orlando",
 		"Telefono": "335-278-9678",
 		"Codigo_Postal": "8635",
-		"Tipo": "Apartamento",
+		"Tipo": "Departamento",
 		"Precio": "$47,420"
 	},
 	{
@@ -194,7 +194,7 @@
 		"Ciudad": "Washington",
 		"Telefono": "491-394-8799",
 		"Codigo_Postal": "37-346",
-		"Tipo": "Apartamento",
+		"Tipo": "Departamento",
 		"Precio": "$69,505"
 	},
 	{
@@ -257,7 +257,7 @@
 		"Ciudad": "Miami",
 		"Telefono": "334-030-0048",
 		"Codigo_Postal": "9738",
-		"Tipo": "Apartamento",
+		"Tipo": "Departamento",
 		"Precio": "$14,560"
 	},
 	{
@@ -293,7 +293,7 @@
 		"Ciudad": "Washington",
 		"Telefono": "956-749-3273",
 		"Codigo_Postal": "94323",
-		"Tipo": "Apartamento",
+		"Tipo": "Departamento",
 		"Precio": "$85,996"
 	},
 	{
@@ -329,7 +329,7 @@
 		"Ciudad": "Orlando",
 		"Telefono": "326-023-8622",
 		"Codigo_Postal": "02187",
-		"Tipo": "Apartamento",
+		"Tipo": "Departamento",
 		"Precio": "$23,492"
 	},
 	{
@@ -347,7 +347,7 @@
 		"Ciudad": "New York",
 		"Telefono": "259-039-5762",
 		"Codigo_Postal": "6038",
-		"Tipo": "Apartamento",
+		"Tipo": "Departamento",
 		"Precio": "$41,843"
 	},
 	{
@@ -428,7 +428,7 @@
 		"Ciudad": "Los Angeles",
 		"Telefono": "210-220-4305",
 		"Codigo_Postal": "J6H 9S9",
-		"Tipo": "Apartamento",
+		"Tipo": "Departamento",
 		"Precio": "$33,141"
 	},
 	{
@@ -437,7 +437,7 @@
 		"Ciudad": "New York",
 		"Telefono": "362-652-3567",
 		"Codigo_Postal": "63897",
-		"Tipo": "Apartamento",
+		"Tipo": "Departamento",
 		"Precio": "$88,980"
 	},
 	{
@@ -464,7 +464,7 @@
 		"Ciudad": "New York",
 		"Telefono": "057-000-7888",
 		"Codigo_Postal": "6390",
-		"Tipo": "Apartamento",
+		"Tipo": "Departamento",
 		"Precio": "$82,679"
 	},
 	{
@@ -581,7 +581,7 @@
 		"Ciudad": "Orlando",
 		"Telefono": "820-970-3451",
 		"Codigo_Postal": "35826",
-		"Tipo": "Apartamento",
+		"Tipo": "Departamento",
 		"Precio": "$15,782"
 	},
 	{
@@ -707,7 +707,7 @@
 		"Ciudad": "Houston",
 		"Telefono": "050-082-4431",
 		"Codigo_Postal": "99-113",
-		"Tipo": "Apartamento",
+		"Tipo": "Departamento",
 		"Precio": "$99,947"
 	},
 	{
@@ -734,7 +734,7 @@
 		"Ciudad": "New York",
 		"Telefono": "272-977-8230",
 		"Codigo_Postal": "G1C 0L5",
-		"Tipo": "Apartamento",
+		"Tipo": "Departamento",
 		"Precio": "$97,152"
 	},
 	{
@@ -761,7 +761,7 @@
 		"Ciudad": "New York",
 		"Telefono": "818-932-2502",
 		"Codigo_Postal": "3977",
-		"Tipo": "Apartamento",
+		"Tipo": "Departamento",
 		"Precio": "$82,655"
 	},
 	{
@@ -779,7 +779,7 @@
 		"Ciudad": "Orlando",
 		"Telefono": "020-821-1050",
 		"Codigo_Postal": "54983",
-		"Tipo": "Apartamento",
+		"Tipo": "Departamento",
 		"Precio": "$96,267"
 	},
 	{
@@ -806,7 +806,7 @@
 		"Ciudad": "Houston",
 		"Telefono": "821-444-9824",
 		"Codigo_Postal": "5962",
-		"Tipo": "Apartamento",
+		"Tipo": "Departamento",
 		"Precio": "$82,504"
 	},
 	{
@@ -851,7 +851,7 @@
 		"Ciudad": "Los Angeles",
 		"Telefono": "751-107-3929",
 		"Codigo_Postal": "R1B 4Y7",
-		"Tipo": "Apartamento",
+		"Tipo": "Departamento",
 		"Precio": "$32,660"
 	},
 	{
@@ -878,7 +878,7 @@
 		"Ciudad": "Los Angeles",
 		"Telefono": "751-125-7876",
 		"Codigo_Postal": "34981",
-		"Tipo": "Apartamento",
+		"Tipo": "Departamento",
 		"Precio": "$6,672"
 	},
 	{
