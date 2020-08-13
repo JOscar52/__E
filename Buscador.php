@@ -1,63 +1,42 @@
 
-
 <?php
-// Mostrar datos Seleccionados
-  $buscaCiudad="New York";
-  $buscaTipo="Casa";
-  $buscaCiudad=$_POST['cd'];
-  $buscaTipo=$_POST['tp'];
-  $rnPrecioInicial=$_POST['rPrecI'];
-  $rnPrecioFinal=$_POST['rPrecF'];
- //echo "<script>window.open='index.html';</script>";
-  //echo " en PHP Busca la Ciudad de : ".$buscaCiudad." Tipo: ".$buscaTipo.PHP_EOL;
-  //echo " Busca entre el precio : ".$rnPrecioInicial." y ".$rnPrecioFinal.PHP_EOL;
-  //echo PHP_EOL;
+// buscardor-php
+if (isset($_POST["ciudad"]))
+  $ciudadBuscar = $_POST["ciudad"];
+if (isset($_POST['tipo']))
+  $tipoBuscar = $_POST['tipo'];
+if (isset($_POST['precio']))
+  $precioBuscar = $_POST['precio'];
 
-/*******************************************/
-// el archivo tiene que ir como lectura "r"
-  $archi=fopen("./data-1.json","r");
-  $lee_dat=fread($archi,filesize("./data-1.json"));
-  $dato=json_decode($lee_dat,true);
-  $i=0;
-  foreach ($dato as $key => $seleccion) {
+$data = file_get_contents("data-1.json");
+$jsonData = json_decode($data);
+$jsonResponse = [];
 
-    $pre2=$seleccion['Precio'];
-    $pre1=str_replace("$","",$pre2);
-    $pre=str_replace(",","",$pre1);
-    if($rnPrecioInicial<=$pre && $pre<=$rnPrecioFinal)
-    {
-      if($buscaCiudad=="Todo"){
-        if($buscaTipo=="Todo"){
-          $i=1;
-          echo "Error en selección: NO se perimte seleccionar Todo en Ciudad y Tipo";
-        }
-        else{
-          if($seleccion['Tipo']==$buscaTipo){
-            $i=1;
-            echo json_encode($seleccion);echo PHP_EOL;echo PHP_EOL;
-          }
-        }
-      }
-      else {
-          if($seleccion['Ciudad']==$buscaCiudad){
-            if($buscaTipo=="Todo"){
-              $i=1;
-              echo json_encode($seleccion);echo PHP_EOL;echo PHP_EOL;
-            }
-            else{
-              if($seleccion['Tipo']==$buscaTipo){
-                $i=1;
-                echo json_encode($seleccion);echo PHP_EOL;echo PHP_EOL;
-              }
-            }
-          }
-      }
+foreach ($jsonData as $key => $obj) {
+  $Id = $obj->Id;
+  $Direccion = $obj->Direccion;
+  $Ciudad = $obj->Ciudad;
+  $Telefono = $obj->Telefono;
+  $Codigo_Postal = $obj->Codigo_Postal;
+  $Tipo = $obj->Tipo;
+  $Precio = $obj->Precio;
+  if (isset($ciudadBuscar) && $ciudadBuscar != ''  && $ciudadBuscar != 'select' && $ciudadBuscar != $Ciudad) {
+     continue;
+  }
+
+  if (isset($tipoBuscar) && $tipoBuscar != ''   && $tipoBuscar != 'select'  && $tipoBuscar != $Tipo) {
+    continue;
+  }
+
+  if (isset($precioBuscar)) {
+    $inicio = intval(explode(";", $precioBuscar)[0]);
+    $fin = intval(explode(";", $precioBuscar)[1]);
+    $Precio = str_replace('$', '', str_replace(',', '', str_replace(' ', '', $Precio)));
+    if ($Precio < $inicio || $Precio > $fin) {
+      continue;
     }
-
-    $pre1="";$pre="";
   }
+  array_push($jsonResponse, $obj);
+}
 
-  if($i==0){
-    echo "No se encontró dato con las características solicitadas";
-  }
-?>
+echo json_encode($jsonResponse);
